@@ -9,15 +9,23 @@ And then establish a project below.
 
 
 The project tree is like this:
+
 1       beautygan
+
 2      data          beautygan.py  models.py   histogram_matching.py  datasets.py
 
 In the data:
+
 1      data
+
 2     makeup_dataset
+
 3    train           val        val_MAKEMIX.txt   val_SYMIX.txt  train_MAKEMIX.txt  train_SYMIX.txt
+
 4  images segs   images segs
+
 5  A  B   A  B   A   B  A  B
+
 
 You should put all the non-makeup images to data/makeup/dataset/train/images/A, and put all the makeup images to data/makeup/dataset/train/images/B.
 You should put all the non-makeup segs to data/makeup/dataset/train/segs/A, put all the makeup segs to data/makeup/dataset/train/segs/B. 
